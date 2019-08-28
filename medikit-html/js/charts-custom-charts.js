@@ -19,7 +19,7 @@ gradientFill2.addColorStop(0, "rgba(255, 91, 204, 0.5)");
 gradientFill2.addColorStop(1, "rgba(255, 91, 204, 0)");
 
 var ActivityChart = new Chart(chartactivity, {
-    type: 'horizontalBar',
+    type: 'line',
     data: {
         labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
         datasets: [{
@@ -97,7 +97,7 @@ var ActivityChart = new Chart(chartactivity, {
 var chartdiseases = document.getElementById('DiseasesChart').getContext("2d");
 
 var DiseasesChart = new Chart(chartdiseases, {
-    type: 'pie',
+    type: 'doughnut',
     data: {
         labels: ["FLU", "PNEUMONIAE", "COLDS"],
         datasets: [{
@@ -192,7 +192,7 @@ var ReportsChart = new Chart(chartreports, {
 var chartcustom = document.getElementById('CustomChart').getContext("2d");
 
 var CustomChart = new Chart(chartcustom, {
-    type: 'bar',
+    type: 'line',
     data: {
         labels: ["SU", "MO", "TU", "WE", "TH", "FR", "SA"],
         datasets: [{
